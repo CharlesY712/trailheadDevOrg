@@ -54,7 +54,7 @@ trigger CreateEmail on Contact (before insert) {
                 
                 System.debug(newEmail);
                 
-                //insert newEmail into email field
+                c.Email = newEmail;
             }
         }
     }
